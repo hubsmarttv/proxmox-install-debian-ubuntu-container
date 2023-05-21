@@ -429,7 +429,7 @@ install_script() {
 
 start() {
   if command -v pveversion >/dev/null 2>&1; then
-    if ! (whiptail --title "${APP} LXC" --yesno "This will create a New Debian or Ubuntu  LXC. Proceed?" 10 58); then
+    if ! (whiptail --title "${APP} LXC" --yesno "This will create a New Debian or Ubuntu  LXC.  Proceed?" 10 58); then
       clear
       echo -e "⚠  User exited script \n"
       exit
