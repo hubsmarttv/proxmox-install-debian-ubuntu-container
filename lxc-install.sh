@@ -551,7 +551,7 @@ EOF
 description() {
   IP=$(pct exec "$CTID" ip a s dev eth0 | awk '/inet / {print $2}' | cut -d/ -f1)
   pct set "$CTID" -description "# ${APP} LXC
-  ### https://tteck.github.io/Proxmox/
+  ### https://github.com/hubsmarttv
   <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/☕-Buy me a coffee-red' /></a>"
   if [[ -f /etc/systemd/system/ping-instances.service ]]; then
     systemctl start ping-instances.service
